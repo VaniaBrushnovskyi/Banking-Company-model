@@ -1,0 +1,23 @@
+//Colors
+$Second-color: #CAFF33;
+$thirty-color: #262626;
+//Text-colors
+$Text-color: #fff;
+
+//Any-colors
+$btn-color2: #1C1C1C;
+
+
+
+
+@mixin LinkHover {
+    transition: 0.2s ease-in;
+}
+@mixin Hover-btn {
+    color: #1C1C1C;
+    background-color: #CAFF33;
+    transition: .2s ease-in;
+}
+@mixin Active-btn {
+    filter: blur(3px);
+}

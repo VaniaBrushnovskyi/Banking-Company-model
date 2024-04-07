@@ -1,0 +1,216 @@
+//HEADER
+.header {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 1050px;
+    margin-bottom: 150px;
+    &__bg {
+        position: absolute;
+        z-index: 1;
+    }
+}
+//NAV
+.header__nav {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    width: 1600px;
+    height: 95px;
+    margin: 50px auto;
+    background-color: #1c1c1c;
+    border-radius: 100px;
+    font-size: 18px;
+}
+.nav__logo {
+    margin-left: 34px;
+    margin-right: 423px;
+}
+.nav__menu {
+    display: flex;
+    gap: 1px;
+    margin-right: 305px;
+    &_style-home {
+        color: $Text-color;
+        padding: 12px 24px;
+        background-color: #262626;
+        border-radius: 82px;
+    }
+    &_style {
+        color: $Text-color;
+        padding: 12px 24px;
+    }
+}
+.nav__sing-in {
+    margin-right: 30px;
+    color: $Text-color;
+}
+.nav__login {
+    padding: 14px 30px;
+    background-color: $Second-color;
+    border-radius: 100px;
+    color: #1c1c1c; 
+    margin-right: 34px;
+}
+.nav__burger-menu {
+    display: flex;
+    align-items: center;
+
+}
+//CONTENT
+.header__content {
+    display: flex;
+    max-width: 1920px;
+}
+.header__content_left {
+    display: flex;
+    flex-direction: column;
+    width: 825px;
+    height: 460px;
+    margin: 100px 120px 0 162px;
+    .left {
+        width: 357px;
+        font-size: 18px;
+        color: $Text-color;
+        padding: 10px 20px 10px 14px;
+        background-color: #262626;
+        font-weight: 200;
+        border-radius: 50px;
+    }
+    h1 {
+        font-size: 48px;
+        color: $Text-color;
+        text-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        span {
+            color: $Second-color;
+        }
+    }
+    p {
+        width: 805px;
+        color: $Text-color;
+        font-size: 18px;
+        font-weight: 200;
+        margin-bottom: 50px;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+        color: $thirty-color;
+        background-color: $Second-color;
+        width: 183px;
+        border-radius: 80px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 18px 0px;
+    }
+}
+.header__content-bg {
+    position: relative;
+    z-index: -1;
+    top: -710px;
+    left: 280px;
+}
+.header__content_right {
+    margin-top: 40px;
+    width: 515px;
+    height: 625px;
+    &-1 {
+        position: relative;
+        left: -50px;
+        top: 10px;
+        color: $Text-color;
+        background-color: rgb(202, 255, 51, 10%);
+        width: 188px;
+        font-size: 13px;
+        height: 75px;
+        text-align: center;
+        border-radius: 13px;
+        img {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+        }
+        span {
+            position: absolute;
+            top: 15px;
+            left: 55px;
+            font-size: 17px;
+            font-weight: 250;
+        }
+    }
+    &-2 {
+        border: 1px solid rgb(202, 255, 51, 10%);
+        border-radius: 10px;
+        background-color: #1A1A1A;
+        width: 515px;
+        margin-bottom: 12px;
+        span {
+            display: block;
+            color: $Text-color;
+            font-size: 17px;
+            padding: 29px;
+        }
+    }
+    .right-2__content {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $Second-color;
+        text-align: center;
+        background-color: #1f1e1e;
+        width: 425px;
+        height: 180px;
+        margin-bottom: 15px;
+    }
+    button {
+        display: block;
+        margin: 0 auto;
+        padding: 14px 180px;
+        color: $Second-color;
+        background-color: rgb(202, 255, 51, 10%);
+        border-radius: 50px;
+        margin-bottom: 30px;
+    }
+    &-3 {
+        display: flex;
+        color: $Text-color;
+        position: relative;
+        left: 180px;
+        width: 370px;
+        height: 70px;
+        background-color: rgb(202, 255, 51, 10%);
+        border-radius: 50px;
+        font-size: 15px;
+        span {
+            margin: 23px 10px 0px 20px;
+        }
+        .right-3__currency {
+            display: flex;
+            justify-content: center;
+            gap: 7px;
+            width: 176px;
+            height: 52px;
+            background-color: #1a1a1a;
+            border-radius: 50px;
+            margin-top: 8px;
+            li {
+                background-color: $thirty-color;
+                border-radius: 50%;
+                width: 34px;
+                height: 34px;
+                margin-top: 8.6px;
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+//HEADER
+.nav__logo {
+    transition: .5s;
+    &:hover {
+        transform: scale(0.89);
+        transition: 0.5s ease;
+    }
+    &:active {
+        filter: blur(3px);
+    }
+}
+.nav__menu {
+    a {
+        @include LinkHover;
+    }
+    &_style:hover,
+    &_style:visited {
+        background-color: #262626;
+        border-radius: 82px; 
+    }
+    &_style:active {
+        background-color: $Second-color;
+    }   
+}
+
+.nav__sing-in {
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: $Second-color;
+    }
+    &:active {
+        color: $Second-color;
+        text-decoration: none;
+    }
+}
+.nav__login {
+    transition: .4s ease-in;
+    &:hover {
+        text-align: center;
+        border-radius: 0%;
+        transition: .1s ease-in;
+        font-weight: 600;
+    }
+    &:active {
+        filter: blur(3px);
+        color: $Text-color;
+    }
+}
+
+//H-CONTENT
+.header__content_left {
+    a {
+        transition: .4s ease-in;
+        &:hover {
+            text-align: center;
+            border-radius: 0%;
+            transition: .1s ease-in;
+            font-weight: 700;
+        }
+        &:active {
+            filter: blur(3px);
+            color: $Text-color;
+        }
+    }
+}
+.header__content_right-1 {
+    transition: .4s ease-in;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition: .1s ease-in;
+            font-weight: 700;
+            background-color: rgb(60, 75, 17);
+        }
+        &:active {
+            filter: blur(3px);
+            color: $Text-color;
+        }
+    }
+.header__content_right {
+    button {
+        transition: .4s ease-in;
+        &:hover {
+            border-radius: 0%;
+            transition: .3s ease-in;
+            background-color: $Second-color;
+            color: $thirty-color;
+        }
+        &:active {
+            filter: blur(3px);
+            color: $Text-color;
+        }
+    }
+}
+.right-3__currency {
+    li {
+        transition: all .5s ease-in;
+    }
+    li:hover{
+        transform: rotateY(200deg);
+        transition: .3s ease-in;
+    }
+}
+
+//s1
+.s1__top_buttons-block1{
+    &:hover {
+        @include Hover-btn;
+        font-weight: 300;
+    }
+    &:active {
+        @include Active-btn;
+    }
+}
+.s1__top_buttons-block2{
+    &:hover {
+        @include Hover-btn;
+        font-weight: 300;
+    }
+    &:active {
+        @include Active-btn;
+    }
+}

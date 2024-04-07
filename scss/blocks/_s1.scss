@@ -1,0 +1,110 @@
+.s1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    gap: 100px;
+    max-width: 1596px;
+/*     height: 559px; */
+    color: $Text-color;
+    margin-bottom: 150px;
+}
+.s1__top {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+.s1__top-text {
+    width: 910px;
+    h1 {
+        font-size: 48px;
+        margin-bottom: 14px;
+        span {
+            color: $Second-color;
+        }
+    }
+    p {
+        font-size: 18px;
+        font-weight: 100;
+    }
+}
+.s1__top_buttons {
+    width: 686px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: end;
+    &-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 386px;
+        height: 83px;
+        background-color: #262626;
+        border-radius: 82px;
+        &1 {
+           width: 181px;
+           height: 55px;
+           font-size: 18px;
+           font-weight: 300;
+           border-radius: 82px;
+           transition: .3s;         
+        }
+        &2 {
+            width: 181px;
+            height: 55px;
+            font-size: 18px;
+            font-weight: 300;
+            border-radius: 82px;
+            transition: .3s;
+        }
+    }
+}
+.s1__bottom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    transition: 1.3s;
+    &-off {
+        display: none;
+        transform: scale(1.1);
+        transition: .3s;
+    }
+}
+.s1__bottom_forindividuals,
+.s1__bottom_forbusinesses {
+    display: flex;
+    flex-direction: column;
+    width: 465px;
+    text-align: center;
+    img {
+        margin: 0 auto;
+        width: 98px;
+        margin-bottom: 30px;
+    }
+    h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 19px;
+        font-weight: 100;
+        line-height: 30px;
+    }
+}
+.forindividuals-businesses {
+        color: $btn-color2;
+        background-color: $Second-color;
+}
+/* .forindividuals {
+    
+} */
+.forbusinesses {
+    img {
+        filter: grayscale(100%);
+    }
+    p {
+        font-style: italic;
+    }
+}
