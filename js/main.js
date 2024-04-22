@@ -61,26 +61,22 @@ document.querySelector(".s1__top_buttons-block2").addEventListener('click', func
     if (eleBusiness.classList.contains("s1__bottom-off")) {
         eleBusiness.classList.remove("s1__bottom-off");
         eleInd.classList.add("s1__bottom-off");
-    } else {
+    }/*  else {
         eleInd.classList.remove("s1__bottom-off");
         eleBusiness.classList.add("s1__bottom-off");
-    }
+    } */
   })
   
 document.querySelector(".s1__top_buttons-block1").addEventListener('click', function() {
   
-    if (eleBusiness.classList.contains("s1__bottom-off")) {
-        eleBusiness.classList.remove("s1__bottom-off");
-        eleInd.classList.add("s1__bottom-off");
-    } else {
+    if (eleInd.classList.contains("s1__bottom-off")) {
         eleInd.classList.remove("s1__bottom-off");
         eleBusiness.classList.add("s1__bottom-off");
-    }
+    }/*  else {
+        eleInd.classList.remove("s1__bottom-off");
+        eleBusiness.classList.add("s1__bottom-off");
+    } */
   })
-
-  eleInd.addEventListener("load", function() {
-    eleInd.style.opacity = 1;
-});
 
 
 /*  */
@@ -94,8 +90,6 @@ btnBusinesses.onclick = function() {
 btnIndividuals.onclick = function() {
     btnBusinesses.classList.remove("forindividuals-businesses");
 }
-
-
 /*  */
 const divIndividuals = document.querySelector(".s1__top_btn-ind");
 const divBusiness = document.querySelector(".s1__top_btn-bus");
@@ -109,3 +103,44 @@ divIndividuals.onclick = function() {
     btnInd.classList.add("forindividuals-businesses");
 }
 
+
+/* s2 LEARN MORE */
+const learnInd = document.querySelector(".forindividuals");
+const learnrBusiness = document.querySelector(".forbusinesses");
+
+document.querySelector(".buss_link-learn").addEventListener('click', function() {
+  
+    if (learnrBusiness.classList.contains("s1__bottom-off")) {
+        learnrBusiness.classList.remove("s1__bottom-off");
+        learnInd.classList.add("s1__bottom-off");
+    }/*  else {
+        learnInd.classList.remove("s1__bottom-off");
+        learnrBusiness.classList.add("s1__bottom-off");
+    } */
+  })
+  
+document.querySelector(".ind_link-learn").addEventListener('click', function() {
+  
+    if (learnInd.classList.contains("s1__bottom-off")) {
+        learnInd.classList.remove("s1__bottom-off");
+        learnrBusiness.classList.add("s1__bottom-off");
+    }/*  else {
+        learnrBusiness.classList.remove("s1__bottom-off");
+        learnInd.classList.add("s1__bottom-off");
+    } */
+  })
+
+const forInd = document.querySelector(".for-ind_learn-more");
+const forBuss = document.querySelector(".for-buss_learn-more");
+const linkInd = document.querySelector(".ind_link-learn");
+const linkBuss = document.querySelector(".buss_link-learn");
+
+linkBuss.onclick = function() {
+    btnBus.classList.add("forindividuals-businesses") || btnInd.classList.remove("forindividuals-businesses");
+}
+
+linkInd.onclick = function() {
+    btnInd.classList.add("forindividuals-businesses") || btnBus.classList.remove("forindividuals-businesses");
+}
+
+/*  */
