@@ -121,3 +121,25 @@
         @include Active-btn;
     }
 }
+
+//s2
+.s2__bottom_upper-first,
+.s2__bottom_under-fourth {
+    transition: .3s ease;
+    div:hover {
+        cursor:not-allowed;
+        transform: scale(1.01);
+        transition: .9s ease;
+        border: 1px solid $Second-color;
+    }
+}
+.ind_link-learn,
+.buss_link-learn {
+    &:hover {
+        @include Hover-btn;
+    }
+    &:active {
+        @include Active-btn;
+        border-radius: 0;
+    }
+}

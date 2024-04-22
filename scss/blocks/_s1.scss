@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-self: center;
     gap: 100px;
-    max-width: 1596px;
+    width: 83.3%;
 /*     height: 559px; */
     color: $Text-color;
     margin-bottom: 150px;
@@ -97,9 +97,6 @@
         color: $btn-color2;
         background-color: $Second-color;
 }
-/* .forindividuals {
-    
-} */
 .forbusinesses {
     img {
         filter: grayscale(100%);

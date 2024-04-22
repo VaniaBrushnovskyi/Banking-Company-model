@@ -5,7 +5,7 @@
     }
 //HEADER
     .header {
-        margin-bottom: 75px;
+/*         margin-bottom: 75px; */
         height: 1030px;
         &__bg {
             width: 382px;
@@ -313,6 +313,7 @@
     width: 358px;
     height: 100%;
     gap: 60px;
+    margin-bottom: 80px;
 }
 .s1__top {
     flex-direction: column;
@@ -345,12 +346,107 @@
     }
     p {
         font-size: 14px;
+        line-height: 24px;
     }
 }
 
-
-
-
+//s2
+.s2 {
+    align-content: center;
+    margin-bottom: 80px;
+    width: 358px;
+}
+.s2__top {
+   width: 358px;
+   text-align: center;
+    h4 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
+.s2__bottom {
+    width: 358px;
+}
+.s2__bottom_upper {
+    flex-direction: column;
+    margin-bottom: 0;
+    width: 358px;
+    img {
+        width: 118px;
+    }
+}
+.s2__bottom_under {
+    width: 358px;
+    flex-direction: column;
+    &-third {
+        order: 2;
+    }
+    &-fourth {
+        order: 1;
+    }
+    img {
+        width: 118px;
+    }
+}
+.s2__bottom_upper-first,
+.s2__bottom_under-fourth {
+/*     margin-bottom: 30px; */
+    width: 358px;
+    height: 370px;
+    div {
+        width: 154px;
+        height: 160px;
+        img {
+            width: 64px;
+        }
+        h6 {
+            font-size: 14px;
+            margin: 0 14px;
+        }
+    }
+}
+.s2__bottom_upper-second,
+.s2__bottom_under-third {
+    width: 358px;
+    height: 663px;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+.block-text {
+    width: 358px;
+    text-align: center;
+    margin-bottom: 70px;
+    h5 {
+        font-size: 20px;
+    }
+    p {
+        text-align: center;
+        font-size: 14px;
+    }
+}
+.block-list {
+    width: 358px;
+    height: 360px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    li {
+        height: 83px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    span {
+        margin-bottom: 2px;
+    }
+}
+.ind_link-learn,
+.buss_link-learn {
+    margin-left: 33%;
+}
 
 
 
